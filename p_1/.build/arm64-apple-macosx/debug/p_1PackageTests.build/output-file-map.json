@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/arm64-apple-macosx/debug/p_1PackageTests.build/primary.swiftdeps"
+  },
+  "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/arm64-apple-macosx/debug/p_1PackageTests.derived/runner.swift": {
+    "dependencies": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/arm64-apple-macosx/debug/p_1PackageTests.build/runner.d",
+    "object": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/arm64-apple-macosx/debug/p_1PackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/arm64-apple-macosx/debug/p_1PackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/arm64-apple-macosx/debug/p_1PackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/arm64-apple-macosx/debug/p_1PackageTests.build/runner.dia"
+  }
+}

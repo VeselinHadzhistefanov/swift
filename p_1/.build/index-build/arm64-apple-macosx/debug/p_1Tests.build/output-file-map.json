@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/index-build/arm64-apple-macosx/debug/p_1Tests.build/primary.swiftdeps"
+  },
+  "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/Tests/p_1Tests/p_1Tests.swift": {
+    "dependencies": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/index-build/arm64-apple-macosx/debug/p_1Tests.build/p_1Tests.d",
+    "object": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/index-build/arm64-apple-macosx/debug/p_1Tests.build/p_1Tests.swift.o",
+    "swiftmodule": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/index-build/arm64-apple-macosx/debug/p_1Tests.build/p_1Tests~partial.swiftmodule",
+    "swift-dependencies": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/index-build/arm64-apple-macosx/debug/p_1Tests.build/p_1Tests.swiftdeps",
+    "diagnostics": "/Users/veselinhadzhistefanov/Library/Mobile Documents/com~apple~CloudDocs/source/swift/p_1/.build/index-build/arm64-apple-macosx/debug/p_1Tests.build/p_1Tests.dia"
+  }
+}
