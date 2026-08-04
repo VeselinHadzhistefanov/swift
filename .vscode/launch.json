@@ -4,21 +4,41 @@
       "type": "swift",
       "request": "launch",
       "args": [],
-      "cwd": "${workspaceFolder:swift}/p_1",
-      "name": "Debug p_1 (p_1)",
-      "target": "p_1",
+      "cwd": "${workspaceFolder:swift}/swift_package_1",
+      "name": "Debug swift_package_1 (swift_package_1)",
+      "target": "swift_package_1",
       "configuration": "debug",
-      "preLaunchTask": "swift: Build Debug p_1 (p_1)"
+      "preLaunchTask": "swift: Build Debug swift_package_1 (swift_package_1)"
     },
     {
       "type": "swift",
       "request": "launch",
       "args": [],
-      "cwd": "${workspaceFolder:swift}/p_1",
-      "name": "Release p_1 (p_1)",
-      "target": "p_1",
+      "cwd": "${workspaceFolder:swift}/swift_package_1",
+      "name": "Release swift_package_1 (swift_package_1)",
+      "target": "swift_package_1",
       "configuration": "release",
-      "preLaunchTask": "swift: Build Release p_1 (p_1)"
+      "preLaunchTask": "swift: Build Release swift_package_1 (swift_package_1)"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift}/swift_package_1",
+      "name": "Debug swift_package_1 (swift_package_1)",
+      "target": "swift_package_1",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug swift_package_1 (swift_package_1)"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift}/swift_package_1",
+      "name": "Release swift_package_1 (swift_package_1)",
+      "target": "swift_package_1",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release swift_package_1 (swift_package_1)"
     }
   ]
 }
