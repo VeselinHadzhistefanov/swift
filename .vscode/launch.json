@@ -39,6 +39,26 @@
       "target": "swift_package_1",
       "configuration": "release",
       "preLaunchTask": "swift: Build Release swift_package_1 (swift_package_1)"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift}/swift_package_2",
+      "name": "Debug swift_package_2 (swift_package_2)",
+      "target": "swift_package_2",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug swift_package_2 (swift_package_2)"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift}/swift_package_2",
+      "name": "Release swift_package_2 (swift_package_2)",
+      "target": "swift_package_2",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release swift_package_2 (swift_package_2)"
     }
   ]
 }

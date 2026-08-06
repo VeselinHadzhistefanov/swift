@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift}/swift_package_1",
+      "name": "Debug swift_package_1 (swift_package_1)",
+      "target": "swift_package_1",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug swift_package_1 (swift_package_1)"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift}/swift_package_1",
+      "name": "Release swift_package_1 (swift_package_1)",
+      "target": "swift_package_1",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release swift_package_1 (swift_package_1)"
+    }
+  ]
+}
