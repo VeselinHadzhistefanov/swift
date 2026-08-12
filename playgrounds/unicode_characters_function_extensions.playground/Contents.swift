@@ -1,13 +1,14 @@
 extension String.StringInterpolation {
     mutating func appendInterpolation(unicode scalar:Int) {
-        appendInterpolation(UnicodeScalar(scalar))
+        appendInterpolation(Character(Unicode.Scalar(scalar) ?? Unicode.Scalar("")!))
     }
 }
 
-func createUnicodeCharacter(id : Int) -> Character{
-    var result : Character = Character("\(unicode: id)")
+func createUnicodeCharacter(id : Int) -> String{
+    var result : String = "\(unicode: id)"
     
     return result
 }
 
-print(createUnicodeCharacter(id : 12312))
+let r = Int.random(in : 1...16000)
+print(createUnicodeCharacter(id : r))
