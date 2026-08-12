@@ -1,12 +1,13 @@
-extension String {
-    
+extension String.StringInterpolation {
+    mutating func appendInterpolation(unicode scalar:Int) {
+        appendInterpolation(UnicodeScalar(scalar))
+    }
 }
-
 
 func createUnicodeCharacter(id : Int) -> Character{
-    var result : Character = "\u{12312}"
+    var result : Character = Character("\(unicode: id)")
     
-    
-    print(result)
     return result
 }
+
+print(createUnicodeCharacter(id : 12312))
