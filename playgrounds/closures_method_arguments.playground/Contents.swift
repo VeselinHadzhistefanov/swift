@@ -39,6 +39,7 @@ func findInRegister(entry : String, register : [String]) -> Int{
     return ID
 }
 func printOwnership(owner : String, ownersRegister : [String], possessionsRegister : [String], possessions : [(Int, Int)]){
+    // print(possessionsRegister) <- bug introduced here - lack of equivalence with outside state that is initiated in closure scope
     let ownerID = findInRegister(entry : owner, register : ownersRegister)
 
     var ownedItems : [String] = []
@@ -57,3 +58,11 @@ putIntoPossession(item: "Dialator Plug with wide base", owner: "Sofi", ownersReg
 putIntoPossession(item: "Squigly Iritator Anal Plug", owner: "Sofi", ownersRegister: &possessionBarers, possessionsRegister : &possessionsRegister, possessions : &possessions)
 
 printOwnership(owner: "Sofi", ownersRegister: possessionBarers, possessionsRegister: possessionsRegister, possessions: possessions)
+
+printOwnership(owner: "Sofi", ownersRegister: possessionBarers, possessionsRegister: possessionsRegister, possessions: {return putIntoPossession(item: "Fine Plastic Brush", owner: "Sofi", ownersRegister: &possessionBarers, possessionsRegister : &possessionsRegister, possessions : &possessions)}())
+
+// Observations:
+// Method parameters seems to be used in the state that they are inserted into the method through the into keyword, this causes the capture statement to modify the state of the referenced variable outside the scope of the function and thus there is an inconsistent version of the refefrenced variable insode the method that doesn't match the versions of the variables directly passed to the function.
+// Proof or rejections : if printing the values exposes differeing values the function is presenting bugs inside of mangled references in inside and outside scopes.
+// print(possessionsRegister) as first statement of print function confirms varying inside and outside scope within the state created by the closure modifying values used inside.
+// bug might be avoidable if care is taken to assert structure states before initiation for ensuring equivalence in state.
