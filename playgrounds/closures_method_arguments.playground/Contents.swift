@@ -66,3 +66,4 @@ printOwnership(owner: "Sofi", ownersRegister: possessionBarers, possessionsRegis
 // Proof or rejections : if printing the values exposes differeing values the function is presenting bugs inside of mangled references in inside and outside scopes.
 // print(possessionsRegister) as first statement of print function confirms varying inside and outside scope within the state created by the closure modifying values used inside.
 // bug might be avoidable if care is taken to assert structure states before initiation for ensuring equivalence in state.
+
