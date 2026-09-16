@@ -2,22 +2,9 @@
 // The pyramid should have a base level
 import Foundation
 
-//prefix operator ** : <# Precedence Group #>
-//extension Double{
-//    static prefix func ** (power : Double) -> Double {
-//        return pow(self, power)
-//    }
-//}
+// Goal 1: Create a function that gets the number of integers starting from 1 that sum up to certain number
 
-var characters = ["Alpha", "Thetta", "Epsilon", "Omega", "Thi", "Shi", "Ultra", "Mega", "Megas"]
-//func calcolaterUseReverseFactoriel(n : Int)->Int{
-//    
-//}
-//func spreadLevel(array : [String]) -> [String]{
-//    
-//}
-
-func getFactorial(sum : Int) -> Int{
+func countForSum(sum : Int) -> Int{
     var result = 0.0
     var rSide : Double = Double(sum) * 2.0 + 0.25
     rSide = pow(rSide, 0.5) - 0.5
@@ -29,7 +16,45 @@ func getFactorial(sum : Int) -> Int{
         return 0
     }
 }
-getFactorial(sum: 10)
+var sum : Int = 1 + 2 + 3 + 4
+print(sum)
+//print(countForSum(sum :sum))
+
+// Goal 2: Create a function that returns the number of integers to create a sum with the remainder appended to it
+
+func reverseSumWithRemainder(sum: Int) -> (n : Double, remainder : Double){
+    var rSide : Double = Double(sum) * 2.0 + 0.25
+    rSide = pow(rSide, 0.5) - 0.5
+    var n = Double(Int(rSide))
+    var remainder = rSide - n
+    remainder = Double(sum) - (n * (n + 1)/2.0)
+    
+    return (n, remainder)
+}
+var nonExactSum = 12
+print(reverseSumWithRemainder(sum : nonExactSum))
+
+// Goal 3: Create a prefix perator that computes an exponentiation operation
+
+//prefix operator ** : <# Precedence Group #>
+//extension Double{
+//    static prefix func ** (power : Double) -> Double {
+//        return pow(self, power)
+//    }
+//}
+
+
+// Goal 4: Create a pattern with the strings using the reverse sum function
+var characters = ["Alpha", "Thetta", "Epsilon", "Omega", "Thi", "Shi", "Ultra", "Mega", "Megas"]
+
+//func calcolaterUseReverseFactoriel(n : Int)->Int{
+//
+//}
+//func spreadLevel(array : [String]) -> [String]{
+//
+//}
+
+
 
 
 
